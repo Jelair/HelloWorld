@@ -15,6 +15,7 @@
 		17D490E31F4946960024DACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D490E11F4946960024DACC /* LaunchScreen.storyboard */; };
 		17D490EE1F4946960024DACC /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D490ED1F4946960024DACC /* HelloWorldTests.m */; };
 		17D490F91F4946970024DACC /* HelloWorldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D490F81F4946970024DACC /* HelloWorldUITests.m */; };
+		17D491081F494A8A0024DACC /* AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D491071F494A8A0024DACC /* AssociatedObjectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		17D490F41F4946970024DACC /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D490F81F4946970024DACC /* HelloWorldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldUITests.m; sourceTree = "<group>"; };
 		17D490FA1F4946970024DACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D491061F494A8A0024DACC /* AssociatedObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObjectViewController.h; sourceTree = "<group>"; };
+		17D491071F494A8A0024DACC /* AssociatedObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				17D490D71F4946960024DACC /* AppDelegate.m */,
 				17D490D91F4946960024DACC /* ViewController.h */,
 				17D490DA1F4946960024DACC /* ViewController.m */,
+				17D491061F494A8A0024DACC /* AssociatedObjectViewController.h */,
+				17D491071F494A8A0024DACC /* AssociatedObjectViewController.m */,
 				17D490DC1F4946960024DACC /* Main.storyboard */,
 				17D490DF1F4946960024DACC /* Assets.xcassets */,
 				17D490E11F4946960024DACC /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			files = (
 				17D490DB1F4946960024DACC /* ViewController.m in Sources */,
 				17D490D81F4946960024DACC /* AppDelegate.m in Sources */,
+				17D491081F494A8A0024DACC /* AssociatedObjectViewController.m in Sources */,
 				17D490D51F4946960024DACC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
