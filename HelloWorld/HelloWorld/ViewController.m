@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EOCAutoDictionary.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    EOCAutoDictionary *dic = [EOCAutoDictionary new];
+    dic.date = [NSDate date];
+    NSLog(@"dic.date = %@",dic.date);
 }
 
 - (void)askUserAQuestion{
