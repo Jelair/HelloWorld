@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17217E411F497C5B00141288 /* NSString+EOCMyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17217E401F497C5B00141288 /* NSString+EOCMyAdditions.m */; };
 		17D490D51F4946960024DACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D490D41F4946960024DACC /* main.m */; };
 		17D490D81F4946960024DACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D490D71F4946960024DACC /* AppDelegate.m */; };
 		17D490DB1F4946960024DACC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D490DA1F4946960024DACC /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17217E3F1F497C5B00141288 /* NSString+EOCMyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EOCMyAdditions.h"; sourceTree = "<group>"; };
+		17217E401F497C5B00141288 /* NSString+EOCMyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EOCMyAdditions.m"; sourceTree = "<group>"; };
 		17D490D01F4946960024DACC /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D490D41F4946960024DACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17D490D61F4946960024DACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				17D491071F494A8A0024DACC /* AssociatedObjectViewController.m */,
 				17D491091F4965D10024DACC /* EOCAutoDictionary.h */,
 				17D4910A1F4965D10024DACC /* EOCAutoDictionary.m */,
+				17217E3F1F497C5B00141288 /* NSString+EOCMyAdditions.h */,
+				17217E401F497C5B00141288 /* NSString+EOCMyAdditions.m */,
 				17D490DC1F4946960024DACC /* Main.storyboard */,
 				17D490DF1F4946960024DACC /* Assets.xcassets */,
 				17D490E11F4946960024DACC /* LaunchScreen.storyboard */,
@@ -289,6 +294,7 @@
 				17D490DB1F4946960024DACC /* ViewController.m in Sources */,
 				17D490D81F4946960024DACC /* AppDelegate.m in Sources */,
 				17D491081F494A8A0024DACC /* AssociatedObjectViewController.m in Sources */,
+				17217E411F497C5B00141288 /* NSString+EOCMyAdditions.m in Sources */,
 				17D4910B1F4965D10024DACC /* EOCAutoDictionary.m in Sources */,
 				17D490D51F4946960024DACC /* main.m in Sources */,
 			);
@@ -528,6 +534,7 @@
 				17D490FF1F4946970024DACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17D491001F4946970024DACC /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +543,7 @@
 				17D491021F4946970024DACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17D491031F4946970024DACC /* Build configuration list for PBXNativeTarget "HelloWorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +552,7 @@
 				17D491051F4946970024DACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

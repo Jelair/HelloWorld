@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "EOCAutoDictionary.h"
+#import <objc/runtime.h>
+#import "NSString+EOCMyAdditions.h"
 
 @interface ViewController ()
 
@@ -18,9 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    /**理解消息转发机制**/
     EOCAutoDictionary *dic = [EOCAutoDictionary new];
     dic.date = [NSDate date];
     NSLog(@"dic.date = %@",dic.date);
+    
+    /**利用方法调配来调试黑盒**/
+    Method originalMethod = class_getInstanceMethod([NSString class], @selector(lowercaseString));
+    Method swappedMethod = class_getInstanceMethod([NSString class], @selector(eoc_myLowercaseString));
+    method_exchangeImplementations(originalMethod, swappedMethod);
+    
+    NSString *string = @"This is tHe StRiNg";
+    NSString *lowercaseString = [string lowercaseString];
+    
 }
 
 - (void)askUserAQuestion{
