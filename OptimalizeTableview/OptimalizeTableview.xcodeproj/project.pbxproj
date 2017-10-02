@@ -15,7 +15,6 @@
 		17D6CF851F82704800603672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D6CF831F82704800603672 /* LaunchScreen.storyboard */; };
 		17D6CF901F82704900603672 /* OptimalizeTableviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D6CF8F1F82704900603672 /* OptimalizeTableviewTests.m */; };
 		17D6CF9B1F82704900603672 /* OptimalizeTableviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D6CF9A1F82704900603672 /* OptimalizeTableviewUITests.m */; };
-		17D6CFAA1F82714900603672 /* ITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D6CFA91F82714900603672 /* ITableViewCell.m */; };
 		17D6CFAC1F82762100603672 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17D6CFAB1F82762100603672 /* test.jpg */; };
 		17D6CFAF1F827CA600603672 /* timg-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 17D6CFAD1F827CA600603672 /* timg-2.jpeg */; };
 		17D6CFB21F827D6600603672 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 17D6CFB11F827D6600603672 /* timg.jpeg */; };
@@ -55,8 +54,6 @@
 		17D6CF961F82704900603672 /* OptimalizeTableviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptimalizeTableviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D6CF9A1F82704900603672 /* OptimalizeTableviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptimalizeTableviewUITests.m; sourceTree = "<group>"; };
 		17D6CF9C1F82704900603672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17D6CFA81F82714900603672 /* ITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITableViewCell.h; sourceTree = "<group>"; };
-		17D6CFA91F82714900603672 /* ITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITableViewCell.m; sourceTree = "<group>"; };
 		17D6CFAB1F82762100603672 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		17D6CFAD1F827CA600603672 /* timg-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-2.jpeg"; sourceTree = "<group>"; };
 		17D6CFB11F827D6600603672 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 				17D6CF791F82704800603672 /* AppDelegate.m */,
 				17D6CF7B1F82704800603672 /* ViewController.h */,
 				17D6CF7C1F82704800603672 /* ViewController.m */,
-				17D6CFA81F82714900603672 /* ITableViewCell.h */,
-				17D6CFA91F82714900603672 /* ITableViewCell.m */,
 				17D6CF751F82704800603672 /* Supporting Files */,
 			);
 			path = OptimalizeTableview;
@@ -296,7 +291,6 @@
 				17D6CF7D1F82704800603672 /* ViewController.m in Sources */,
 				17D6CF7A1F82704800603672 /* AppDelegate.m in Sources */,
 				17D6CF771F82704800603672 /* main.m in Sources */,
-				17D6CFAA1F82714900603672 /* ITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
