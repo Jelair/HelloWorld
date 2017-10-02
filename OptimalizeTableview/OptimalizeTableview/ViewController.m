@@ -13,8 +13,9 @@
 typedef void(^RunloopBlock)(void);
 @interface ViewController ()<UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
-
+//用于装绘制图片的任务
 @property (nonatomic,strong) NSMutableArray *tasks;
+//最大任务数
 @property (nonatomic,assign) NSUInteger *maxQueueLength;
 
 @property (nonatomic,strong) NSTimer *timer;
@@ -33,7 +34,7 @@ typedef void(^RunloopBlock)(void);
 }
 
 - (void)justAMethod{
-    
+    //什么都不做
 }
 
 
@@ -91,16 +92,19 @@ typedef void(^RunloopBlock)(void);
     return _tableView;
 }
 #pragma mark -- cfrunloop
-
+//添加任务
 - (void)addTask:(RunloopBlock)block{
     [self.tasks addObject:block];
     if (self.tasks.count == _maxQueueLength) {
+        //如果超过最大任务数，去掉第一个
         [self.tasks removeObjectAtIndex:0];
     }
 }
 
 - (void)addRunloopObserver{
+    //获取当前runloop
     CFRunLoopRef runloop = CFRunLoopGetCurrent();
+    //定义上下文
     CFRunLoopObserverContext context = {
         0,
         (__bridge void *)(self),
@@ -108,9 +112,11 @@ typedef void(^RunloopBlock)(void);
         &CFRelease,
         NULL
     };
+    //创建一个观察者
     CFRunLoopObserverRef defaultObserver = CFRunLoopObserverCreate(NULL, kCFRunLoopAfterWaiting, YES, 0, &callBack, &context);
-    
+    //添加观察者
     CFRunLoopAddObserver(runloop, defaultObserver, kCFRunLoopCommonModes);
+    //释放创建的非ARC管的对象或指针
     CFRelease(defaultObserver);
 }
 
